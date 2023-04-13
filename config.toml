@@ -1,0 +1,31 @@
+baseURL = "https://grejioh.org/"
+copyright = "© grejioh"
+languageCode = "zh-CN"
+theme = "hugo-ink"
+title = "grejioh"
+# Code Highlight
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsstyle = "vs"
+paginate = 10 # articles per page
+
+googleAnalytics = ""
+
+[params]
+# avatar = "/skyzh.jpg"
+mode = "light"
+featherIconsCDN = true
+subtitle = "Actions speak louder than words"
+excludedTypes = ["page", "pages"]
+# images = ['skyzh.jpg']
+
+[[params.social]]
+icon = "github"
+name = "GitHub"
+url = "https://github.com/grejioh"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
