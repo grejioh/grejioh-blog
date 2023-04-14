@@ -47,16 +47,16 @@ int main(void) {
 
 1. 用户在终端使用 shell 创建了一个 pid 为1230的进程，我们称 p0
 2. p0 循环 i==0
-  1. p0 通过 fork()创建了 pid = 1231 进程，我们称p1，p1 处于就绪状态（runnable state）
-  2. p0 进程调用 printf("-")
+    1. p0 通过 fork()创建了 pid = 1231 进程，我们称p1，p1 处于就绪状态（runnable state）
+    2. p0 进程调用 printf("-")
 3. p0 循环 i==1
-  1.	p0 通过 fork()创建了 pid = 1232 进程，我们称p2，p2 处于就绪状态（runnable state）
-  2.	p0 进程调用 printf("-")
+    1. p0 通过 fork()创建了 pid = 1232 进程，我们称p2，p2 处于就绪状态（runnable state）
+    2. p0 进程调用 printf("-")
 4. p0 进程 return 0
 5. p1 进程从 fork() 后开始执行，调用 printf("-")
 6. p1 进程循环 i==1
-  1. p1 通过 fork()创建了 pid = 1233 进程，我们称p3，p3 处于就绪状态（runnable state）
-  2. p1 进程调用 printf("-")
+    1. p1 通过 fork()创建了 pid = 1233 进程，我们称p3，p3 处于就绪状态（runnable state）
+    2. p1 进程调用 printf("-")
 7. p1 进程 return 0
 8. p2 进程从 fork() 后开始执行，调用 printf("-")
 9. p2 进程return 0
